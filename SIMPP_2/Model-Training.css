@@ -1,0 +1,293 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 50vw;
+}
+
+.u-section-1 .u-image-1 {
+  width: 256px;
+  height: 368px;
+  transition-duration: 0.5s;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  margin: 60px auto 0 111px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: -9px auto 0 96px;
+}
+
+.u-section-1 .u-group-elements-1 {
+  width: 261px;
+  min-height: 331px;
+  height: auto;
+  margin: -376px 105px 0 auto;
+}
+
+.u-section-1 .u-image-2 {
+  width: 159px;
+  height: 238px;
+  transition-duration: 0.5s;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  margin: -6px auto 0 51px;
+}
+
+.u-section-1 .u-image-3 {
+  width: 261px;
+  height: 261px;
+  margin: -168px 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: -9px 98px 0 auto;
+}
+
+.u-section-1 .u-text-3 {
+  font-size: 1.125rem;
+  margin: 0 60px 0 729px;
+}
+
+.u-section-1 .u-text-4 {
+  font-size: 1.125rem;
+  margin: -56px 725px 0 63px;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  background-image: none;
+  margin: 20px 118px 0 auto;
+  padding: 11px 50px 11px 49px;
+}
+
+.u-section-1 .u-icon-1 {
+  font-size: 1.3em;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  background-image: none;
+  margin: -51px auto 60px 121px;
+  padding: 11px 50px 11px 49px;
+}
+
+.u-section-1 .u-icon-2 {
+  font-size: 1.3em;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1051px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 369px;
+    margin-top: 74px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -10px;
+  }
+
+  .u-section-1 .u-group-elements-1 {
+    margin-top: -379px;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-top: 14px;
+    margin-right: 58px;
+    margin-left: 531px;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: auto;
+    margin-right: 526px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 727px;
+    margin-right: 116px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -764px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1455px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-top: 73px;
+    margin-left: 236px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-left: 221px;
+  }
+
+  .u-section-1 .u-group-elements-1 {
+    margin-top: 250px;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: -8px;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: 351px;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: 351px;
+    margin-top: -686px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 1128px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -1152px;
+    margin-left: 236px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-image-1 {
+    margin-top: 93px;
+    margin-left: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 25px;
+    margin-left: auto;
+  }
+
+  .u-section-1 .u-group-elements-1 {
+    margin-top: 257px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-top: -693px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 843px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -872px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-image-1 {
+    margin-top: 53px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 0;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
+  .u-section-1 .u-group-elements-1 {
+    margin-top: 366px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: -18px;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+
+  .u-section-1 .u-text-3 {
+    width: auto;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-4 {
+    width: auto;
+    margin-top: -783px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 739px;
+    margin-right: auto;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -778px;
+  }
+}
+
+.u-section-1 .u-image-1,
+.u-section-1 .u-image-1:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-image-1.u-image-1.u-image-1:hover {
+  transform: translateY(-10px) !important;
+}
+
+.u-section-1 .u-image-1.u-image-1.u-image-1.hover {
+  transform: translateY(-10px) !important;
+}
+
+.u-section-1 .u-container-layout:hover .u-image-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-1 .u-image-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-section-1 .u-image-2,
+.u-section-1 .u-image-2:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-1 .u-image-2.u-image-2.u-image-2:hover {
+  transform: translateY(-10px) !important;
+}
+
+.u-section-1 .u-image-2.u-image-2.u-image-2.hover {
+  transform: translateY(-10px) !important;
+}
+
+.u-section-1 .u-container-layout:hover .u-image-2 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-1 .u-image-2 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
