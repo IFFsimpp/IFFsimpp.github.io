@@ -1,0 +1,133 @@
+ .u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg");
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1476px;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 1088px;
+  height: 918px;
+  margin: 258px auto 0 40px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 690px;
+  height: 691px;
+  object-position: 0% 50%;
+  background-position: 50% 50%;
+  background-image: url("images/gatis-marcinkevics-a5uptAdUmjE-unsplash-7.jpg");
+  filter: brightness(0.8);
+  margin: -571px auto 0 395px;
+}
+
+.u-section-1 .u-shape-2 {
+  width: 227px;
+  height: 228px;
+  background-image: none;
+  margin: -390px auto 0 12px;
+}
+
+.u-section-1 .u-form-1 {
+  height: 509px;
+  background-image: none;
+  box-shadow: 14px 21px 35px 8px rgba(0,0,0,0.35);
+  margin: -841px 503px 60px 102px;
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: none;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    background-position: 50% 50%;
+  }
+
+  .u-section-1 .u-shape-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 691px;
+    margin-left: 250px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 403px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-shape-1 {
+    width: 720px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 30px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 186px;
+    margin-left: -1px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-shape-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 96px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-shape-1 {
+    width: 340px;
+    margin-right: auto;
+    margin-left: -175px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: -175px;
+    margin-right: -175px;
+  }
+
+  .u-section-1 .u-shape-2 {
+    margin-left: -163px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-top: -910px;
+    margin-right: 12px;
+    margin-left: -11px;
+  }
+}.form {
+	border-radius: 50px;
+	background: #dce3e5;
+	box-shadow:  20px 20px 60px #bbc1c3,
+				 -20px -20px 60px #fdffff;
+}
