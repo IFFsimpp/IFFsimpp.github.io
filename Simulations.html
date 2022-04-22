@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-  <head>
+<html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -12,8 +11,10 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <link rel="icon" href="images/favicon.png">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+    <link id="u-theme-google-font" rel="stylesheet" href="fonts.css">
+    <link id="u-page-google-font" rel="stylesheet" href="Simulations-fonts.css">
+    
+    
     
     
     
@@ -26,7 +27,53 @@
     <meta property="og:title" content="Simulations">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  </head>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeA3YwfAAAAAIdOSapftV9kzbWe_RAA2pHVobuo"></script>
+    <script>
+( function( grecaptcha, sitekey, actions ) {
+
+	var recaptcha = {
+
+		execute: function( action ) {
+			grecaptcha.execute(
+				sitekey,
+				{ action: action }
+			).then( function( token ) {
+				var forms = document.getElementsByTagName( 'form' );
+
+				for ( var i = 0; i < forms.length; i++ ) {
+					var fields = forms[ i ].getElementsByTagName( 'input' );
+
+					for ( var j = 0; j < fields.length; j++ ) {
+						var field = fields[ j ];
+
+						if ( 'recaptchaResponse' === field.getAttribute( 'name' ) ) {
+							field.setAttribute( 'value', token );
+							break;
+						}
+					}
+				}
+			} );
+		},
+
+		executeContact: function() {
+			recaptcha.execute( actions[ 'contact' ] );
+		}
+	};
+
+	grecaptcha.ready(
+		recaptcha.executeContact
+	);
+
+	document.addEventListener( 'change',
+		recaptcha.executeContact, false
+	);
+} )(
+	grecaptcha,
+	'6LeA3YwfAAAAAIdOSapftV9kzbWe_RAA2pHVobuo',
+	{"contact":"contact"}
+);
+    </script>
+</head>
   <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-acae"><div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="u-clearfix u-group-elements u-group-elements-1">
           <img class="u-hover-feature u-image u-image-default u-image-1" src="images/Untitled_Artwork911.png" alt="" data-image-width="1643" data-image-height="1341" data-href="Home.html" data-page-id="74660296">
@@ -44,10 +91,11 @@
           </div>
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Model-Training.html" style="padding: 10px 20px;">Model Training</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Simulations.html" style="padding: 10px 20px;">Simulations</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Login.html" style="padding: 10px 20px;">Login</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
@@ -55,10 +103,11 @@
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Model-Training.html">Model Training</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Simulations.html">Simulations</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Login.html">Login</a>
 </li></ul>
               </div>
             </div>
@@ -66,18 +115,67 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-clearfix u-section-1" id="sec-de2f">
+    <section class="u-align-center u-clearfix u-section-1" id="carousel_e489">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-border-5 u-border-black u-border-no-bottom u-border-no-left u-border-no-top u-container-layout u-valign-middle u-container-layout-1">
+                  <h5 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-default u-text-1">about</h5>
+                  <h2 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-2"><b>Our preliminary solution</b>
+                  </h2>
+                  <p class="u-hover-feature u-text u-text-default u-text-3"><b> This provides a better monitoring of ocean microplastics and will support future research on microplastics greatly. We’ll provide a login platform, such that oceanographers can record their progress. We would need assistance in fluid modeling, microplastic classification, and a laboratory for microplastic testing</b>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <div class="u-expanded-width u-list u-list-1">
+                    <div class="u-repeater u-repeater-1">
+                      <div class="u-align-left u-border-2 u-border-white u-container-style u-list-item u-repeater-item u-list-item-1">
+                        <div class="u-container-layout u-similar-container u-container-layout-3">
+                          <h6 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-default u-text-4">Microscopically</h6>
+                          <p class="u-align-center u-hover-feature u-text u-text-5"> Microscopically, we propose a Hyperspectral Mask R-CNN to detect and classify microplastics within a water sample, since the process of detecting microplastics chemically is extremely tedious.</p>
+                        </div>
+                      </div>
+                      <div class="u-align-left u-border-2 u-border-white u-container-style u-list-item u-repeater-item u-list-item-2">
+                        <div class="u-container-layout u-similar-container u-container-layout-4">
+                          <h6 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-default u-text-6">Macroscopically</h6>
+                          <p class="u-align-center u-hover-feature u-text u-text-7"> Macroscopically, we would model and predict the future movement of microplastics in the seas with a neural network with data from NASA’s CYGNSS. Traditional methods like direct simulations have to choose between run-time performance or prediction accuracy, not to mention the lack of generalization since these models can only use past data. Using neural networks, the predictions can be run much computationally efficiently and extrapolated into the future. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-de2f">
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/ezgif.com-gif-maker1.gif" alt="" data-image-width="403" data-image-height="400">
-        <p class="u-align-center u-text u-text-1"> &nbsp;By customizing the neural network with tensors, the network will treat movement after rotation and flipping in the same way. Simulation data generated with&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;will be used to train the neural network. To enhance the details of the flow field and turbulence, we can employ current image super-resolution techniques.</p>
-        <p class="u-align-center u-text u-text-2">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://oceanparcels.org/index.html" target="_blank">PARCELS</a>
-        </p>
+        <img class="u-image u-image-default u-image-1" src="images/ezgif.com-gif-maker1.gif" alt="" data-image-width="403" data-image-height="400" data-href="https://oceanparcels.org/index.html">
+        <img class="u-image u-image-default u-image-2" src="images/ezgif.com-gif-maker2.gif" alt="" data-image-width="403" data-image-height="400" data-href="https://oceanparcels.org/index.html">
+        <p class="u-align-center u-text u-text-1"> &nbsp;By customizing the neural network with tensors, the network will treat movement after rotation and flipping in the same way. Simulation data generated with PARCELS will be used to train the neural network. To enhance the details of the flow field and turbulence, we can employ current image super-resolution techniques.</p>
       </div>
     </section>
-    <section class="u-clearfix u-section-2" id="sec-e21f">
+    <section class="u-clearfix u-section-3" id="sec-e21f">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/ezgif.com-gif-maker2.gif" alt="" data-image-width="403" data-image-height="400">
+        <img class="u-image u-image-default u-image-1" src="images/ezgif.com-gif-maker3.gif" alt="" data-image-width="600" data-image-height="313">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-8d64">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-default u-image-1" src="images/ezgif.com-gif-maker4.gif" alt="" data-image-width="600" data-image-height="531">
       </div>
     </section>
     
@@ -108,20 +206,9 @@
         <div class="u-border-1 u-border-white u-line u-line-horizontal u-line-1"></div>
         <p class="u-small-text u-text u-text-variant u-text-3"> © SIMPP 2022. Development by:&nbsp;Ray &amp; Jeffrey . &nbsp;&nbsp;<a href="https://ichthion.com/privacy-policy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Privacy Policy.</a>&nbsp;<a href="https://ichthion.com/terms-and-conditions/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">Terms and Conditions</a>&nbsp;<a href="https://ichthion.com/cookie-policy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">Cookie Policy</a>&nbsp;<a href="https://ichthion.com/accessibility-policy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">Accessibility Policy</a>&nbsp;Accessibility Policy
         </p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://iffsimpp.github.io/" target="_blank">
-        <span>IFFSIMPP website</span>
-      </a>
-      <p class="u-text">
-        <span>made & designed by</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Ray Yeung</span>
-      </a>. 
-    </section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 45px; bottom: 80px; padding: 15px;" class="u-back-to-top u-black u-icon u-icon-rectangle u-opacity u-opacity-80 u-radius-15 u-spacing-15" data-href="#">
+      </div></footer><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 45px; bottom: 80px; padding: 15px;" class="u-back-to-top u-black u-icon u-icon-rectangle u-opacity u-opacity-80 u-radius-15 u-spacing-15" data-href="#">
         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
         <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
     </span>
-  </body>
-</html>
+  
+</body></html>

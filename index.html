@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-  <head>
+<html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -13,8 +12,8 @@
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     
     <link rel="icon" href="images/favicon.png">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+    <link id="u-theme-google-font" rel="stylesheet" href="fonts.css">
+    <link id="u-page-google-font" rel="stylesheet" href="Home-fonts.css">
     
     
     
@@ -30,7 +29,53 @@
     <meta property="og:title" content="Home">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  </head>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeA3YwfAAAAAIdOSapftV9kzbWe_RAA2pHVobuo"></script>
+    <script>
+( function( grecaptcha, sitekey, actions ) {
+
+	var recaptcha = {
+
+		execute: function( action ) {
+			grecaptcha.execute(
+				sitekey,
+				{ action: action }
+			).then( function( token ) {
+				var forms = document.getElementsByTagName( 'form' );
+
+				for ( var i = 0; i < forms.length; i++ ) {
+					var fields = forms[ i ].getElementsByTagName( 'input' );
+
+					for ( var j = 0; j < fields.length; j++ ) {
+						var field = fields[ j ];
+
+						if ( 'recaptchaResponse' === field.getAttribute( 'name' ) ) {
+							field.setAttribute( 'value', token );
+							break;
+						}
+					}
+				}
+			} );
+		},
+
+		executeContact: function() {
+			recaptcha.execute( actions[ 'contact' ] );
+		}
+	};
+
+	grecaptcha.ready(
+		recaptcha.executeContact
+	);
+
+	document.addEventListener( 'change',
+		recaptcha.executeContact, false
+	);
+} )(
+	grecaptcha,
+	'6LeA3YwfAAAAAIdOSapftV9kzbWe_RAA2pHVobuo',
+	{"contact":"contact"}
+);
+    </script>
+</head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-acae"><div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="u-clearfix u-group-elements u-group-elements-1">
           <img class="u-hover-feature u-image u-image-default u-image-1" src="images/Untitled_Artwork911.png" alt="" data-image-width="1643" data-image-height="1341" data-href="Home.html" data-page-id="74660296">
@@ -48,10 +93,11 @@
           </div>
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Model-Training.html" style="padding: 10px 20px;">Model Training</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Simulations.html" style="padding: 10px 20px;">Simulations</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-custom-color-1" href="Login.html" style="padding: 10px 20px;">Login</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
@@ -59,10 +105,11 @@
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Model-Training.html">Model Training</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Simulations.html">Simulations</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Login.html">Login</a>
 </li></ul>
               </div>
             </div>
@@ -85,8 +132,11 @@
       <img class="u-expanded-width u-hover-feature u-image u-image-default u-image-1" src="images/Untitled_Artwork931.png" alt="" data-image-width="1588" data-image-height="1348" data-animation-out="0">
       <h1 class="u-custom-font u-font-georgia u-text u-text-default u-text-1" data-animation-out="0">The Problem</h1>
       
-      <p class="u-align-center u-text u-text-2" data-animation-out="0"><b> B</b><b>illions of pounds of trash and other pollutants enter the oceans every year. There are many causes of ocean pollution, which include intentional discharge and littering.&nbsp; Numerous items such as disposable plastic products and styrofoam containers which directly and indirectly affect marine life, as well as humans.</b><b></b>
+      <p class="u-align-center u-text u-text-2" data-animation-out="0"><b><b>Oceans, which account for 70 percent of the surface of our planet, play a pivotal role in the health of our planet and those who inhabit it. Unfortunately, our oceans are polluted.&nbsp;</b>&nbsp;Numerous items such as disposable plastic products and styrofoam containers&nbsp; can directly and indirectly affect marine life, as well as humans.</b><b></b>
       </p>
+      <a href="Model-Training.html" data-page-id="98083972" class="u-border-none u-btn u-btn-round u-button-style u-hover-feature u-hover-grey-5 u-radius-2 u-white u-btn-1">Read More<span class="u-icon u-text-black"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+      </a>
+      
     </section>
     <section class="skrollable u-clearfix u-image u-parallax u-shading u-section-3" id="sec-b5c0" data-image-width="1600" data-image-height="1570">
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
@@ -107,17 +157,13 @@
 	c11.4,8.2,20.3,8.5,32.2,0c11.6-8.3,19.2-8.3,30.8,0l-3.8,4.8c-9.3-6.6-13.9-6.6-23.3,0c-13.9,9.9-25.8,9.9-39.8,0
 	c-9.1-6.4-16.8-6.4-25.9,0c-13.8,9.8-25.1,9.8-38.9,0c-9.2-6.5-15.4-6.5-24.6,0L0,87.8C11.2,79.8,20.6,79.5,32.2,87.8z"></path></svg>
         </div>
-        <h1 class="u-align-center-sm u-align-center-xs u-custom-font u-font-georgia u-text u-text-default u-text-1" data-animation-out="0">Our Solutions</h1>
+        <h1 class="u-custom-font u-font-georgia u-text u-text-default u-text-1" data-animation-out="0">Our Solution</h1>
         <p class="u-align-center u-text u-text-2" data-animation-out="0"><b></b><b>Our preliminary solution is divided into two parts:&nbsp;</b>
           <br><b>MACRO and MICRO</b>
           <br>
-          <br><b></b>Macroscopically&nbsp;<br>&nbsp;Future movement of microplastics along the coasts would be modelled and predicted with a neural network. Traditional methods like using the Lagrangian or direct simulations have to choose between run-time performance or prediction accuracy.&nbsp;<br>
-          <br>Using neural networks, we would have a better trade-off and the simulation can be run much computationally efficiently. This can be done by applying Proper Orthogonal Decomposition, characterizing only limited degrees of freedom and using flow lines rather than particles for the sake of efficiency.&nbsp;<br>
-          <br>
-          <br><b>Microscopically</b>
-          <br><b></b><b></b>&nbsp;Due to the difficulties in detecting microplastics chemically, we propose the use of neural networks to detect and classify microplastics in a water sample.
+          <br><b>To combat climate change, pollution, and the crisis of exhausting energy and resources, we need new ways to achieve sustainable development for human civilization so that we and our next generations can enjoy quality of life on a planet with a cleaner environment and full of biodiversity.</b>
         </p>
-        <a href="Model-Training.html" data-page-id="98083972" class="u-border-none u-btn u-btn-round u-button-style u-hover-feature u-hover-grey-5 u-radius-2 u-white u-btn-1">Learn More&nbsp;<span class="u-icon u-text-black"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+        <a href="Simulations.html" data-page-id="601023525" class="u-border-none u-btn u-btn-round u-button-style u-hover-feature u-hover-grey-5 u-radius-2 u-white u-btn-1">Learn More&nbsp;<span class="u-icon u-text-black"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
         </a>
       </div>
       
@@ -126,7 +172,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-hover-feature u-image u-image-default u-image-1" src="images/Untitled_Artwork911-11.png" alt="" data-image-width="1600" data-image-height="1306" data-href="About.html" data-page-id="812405175">
         <h1 class="u-custom-font u-text u-text-default u-text-font u-title u-text-1">About Us</h1>
-        <p class="u-align-center-md u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-xl u-large-text u-text u-text-variant u-text-2"> As we strive to overcome climate change, pollution, and the crisis of exhausting energy and resources, we aim to develop new sustainable approaches so that we and our children's generation can enjoy quality of life on a planet with a clean environment and abundant biodiversity.</p>
+        <p class="u-align-center-md u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-xl u-large-text u-text u-text-variant u-text-2"> As we strive to overcome climate change, pollution, and the crisis of exhausting energy and resources, we aim to develop new sustainable approaches so that we and the future generation can enjoy quality of life on a planet with a clean environment and abundant biodiversity.</p>
         <a href="About.html" data-page-id="812405175" class="u-black u-border-none u-btn u-btn-round u-button-style u-hover-feature u-hover-grey-80 u-radius-2 u-btn-1">Learn More&nbsp;<span class="u-icon u-text-white"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
         </a>
       </div>
@@ -137,7 +183,7 @@
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <img class="u-hover-feature u-image u-image-default u-image-1" src="images/Untitled_Artwork961.png" alt="" data-image-width="1097" data-image-height="776" data-href="Model-Training.html" data-page-id="98083972">
         <h1 class="u-custom-font u-text u-text-default u-text-font u-title u-text-1">Take Action</h1>
-        <p class="u-align-center-md u-align-center-sm u-align-center-xs u-large-text u-text u-text-variant u-text-2"> The support and participation of individuals, companies and governments around the globe will allow us to achieve our mission and make progress towards a future without plastic in our oceans.</p>
+        <p class="u-align-center-md u-align-center-sm u-align-center-xs u-large-text u-text u-text-variant u-text-2"> The support and participation of individuals, companies and governments around the globe will allow us to achieve our mission and make progress towards a future without plastic in our ocean.</p>
         <a href="Model-Training.html" data-page-id="98083972" class="u-black u-border-none u-btn u-btn-round u-button-style u-hover-feature u-hover-grey-80 u-radius-2 u-btn-1">Learn More&nbsp;<span class="u-icon u-text-white"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
         </a>
       </div>
@@ -172,20 +218,9 @@
         <div class="u-border-1 u-border-white u-line u-line-horizontal u-line-1"></div>
         <p class="u-small-text u-text u-text-variant u-text-3"> © SIMPP 2022. Development by:&nbsp;Ray &amp; Jeffrey . &nbsp;&nbsp;<a href="https://ichthion.com/privacy-policy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Privacy Policy.</a>&nbsp;<a href="https://ichthion.com/terms-and-conditions/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">Terms and Conditions</a>&nbsp;<a href="https://ichthion.com/cookie-policy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">Cookie Policy</a>&nbsp;<a href="https://ichthion.com/accessibility-policy/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">Accessibility Policy</a>&nbsp;Accessibility Policy
         </p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://iffsimpp.github.io/" target="_blank">
-        <span>IFFSIMPP website</span>
-      </a>
-      <p class="u-text">
-        <span>made & designed by</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Ray Yeung</span>
-      </a>.  
-    </section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 45px; bottom: 80px; padding: 15px;" class="u-back-to-top u-black u-icon u-icon-rectangle u-opacity u-opacity-80 u-radius-15 u-spacing-15" data-href="#">
+      </div></footer><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 45px; bottom: 80px; padding: 15px;" class="u-back-to-top u-black u-icon u-icon-rectangle u-opacity u-opacity-80 u-radius-15 u-spacing-15" data-href="#">
         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
         <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
     </span>
-  </body>
-</html>
+  
+</body></html>
